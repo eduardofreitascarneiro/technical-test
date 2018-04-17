@@ -7,7 +7,8 @@
         public static int MinimumElementIn(List<int> intlist)
         {
             // Adapt the method body to make the corresponding unit test in 'TechnicalTestUnitTests' pass
-            return -1;
+            intlist.Sort();
+            return intlist[0];
         }
     }
 }

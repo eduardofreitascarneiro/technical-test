@@ -6,7 +6,6 @@
     using FluentAssertions;
     using Xunit;
     using System.IO;
-    using TechnicalTestCore;
     using TechnicalTestUtilities;
 
     public class UnitTests : IDisposable
@@ -116,7 +115,7 @@
             // DO NOT change any code in this unit test or this project
             const double argument1 = 2d;
             const double argument2 = 10d;
-            ParentClass child = GetParentReference(new ChildClass());
+            ParentClass child = GetParentReference(new TechnicalTestCore.ChildClass());
             var result = child.AnonymousMathematicalFunction(argument1, argument2);
             result.Should().Be(1024d);
         }
@@ -128,7 +127,7 @@
             // DO NOT change any code in this unit test or this project
             const double argument1 = 3d;
             const double argument2 = 3d;
-            ParentClass child = GetParentReference(new ChildClass());
+            ParentClass child = GetParentReference(new TechnicalTestCore.ChildClass());
             var result = child.AnonymousMathematicalFunction(argument1, argument2);
             result.Should().Be(27d);
         }
